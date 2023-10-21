@@ -38,14 +38,14 @@ public class Main {
                 counter = 0;
                 System.out.println();
                 System.out.println("Type ingredients, one by one, which you want to use.");
-                System.out.println("When finished, type 'exit'");
+                System.out.println("When finished, type 'go'");
                 StringBuilder term = new StringBuilder("[");
                 input = scanner.next();
-                if(!Objects.equals(input, "exit")) {
+                if(!Objects.equals(input, "go")) {
                     term.append(input);
                     while (true) {
                         input = scanner.next();
-                        if (!Objects.equals(input, "exit"))
+                        if (!Objects.equals(input, "go"))
                             term.append(", ").append(input);
                         else break;
                     }
